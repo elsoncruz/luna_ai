@@ -84,6 +84,9 @@ st.markdown(
         background-size:cover;
         
     }
+    .st-emotion-cache-vj1c9o{
+            background-color: transparent;
+    }
 </style>
 """,
     unsafe_allow_html=True,
