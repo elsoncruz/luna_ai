@@ -80,7 +80,7 @@ st.markdown(
         background-color: transparent;
     }
     [data-testid="stAppViewContainer"]{
-        background-image:url("./static/Back.png");
+        background-image:url("https://th.bing.com/th/id/OIP.cKwPnrUETftcFhuKn9W2FwHaEo?w=1280&h=800&rs=1&pid=ImgDetMain");
         background-size:cover;
         
     }
