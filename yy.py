@@ -39,7 +39,8 @@ st.markdown("""
             clear: both;
             float:right;
             margin-top: 6px;
-            margin-right:5px;    
+            margin-right:5px; 
+            
         } 
         .img2 {
             width: 40px; 
