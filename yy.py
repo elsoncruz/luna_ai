@@ -172,7 +172,7 @@ for message in st.session_state.messages:
             st.markdown('<div class="cus"><img src="./static/user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
             pass
         else:
-            st.markdown('<img src="app/static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
+            st.markdown('<img src="https://github.com/elsoncruz/luna_ai/blob/main/static/chatbot.png?raw=true" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
             pass
 
 
@@ -184,7 +184,7 @@ if prompt := st.chat_input("say"):
     response = ask_own_question(prompt)
 
     with st.chat_message("🤖"):
-        st.markdown('<img src="./static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
+        st.markdown('<img src="https://github.com/elsoncruz/luna_ai/blob/main/static/chatbot.png?raw=true" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"🤖","content":response})
 
