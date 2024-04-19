@@ -78,6 +78,8 @@ st.markdown(
 <style>
     .st-emotion-cache-13k62yr{
         background-color: transparent;
+        background-image:url("luna_ai/static/09.jpg");
+        background-size:cover;
     }
     [data-testid="stApp stAppEmbeddingId-sc6yzwuq6bz9 st-emotion-cache-13k62yr erw9t6i1"]{
         background-image:url("luna_ai/static/09.jpg");
