@@ -80,7 +80,7 @@ st.markdown(
         background-color: transparent;
     }
     [data-testid="stAppViewContainer"]{
-        background-image:url("./Back2.jpg");
+        background-image:url("https://github.com/elsoncruz/luna_ai/blob/ffaa042a3fbc56a31a4e868f7bba508410650974/static/Back.png");
         background-size:cover;
         
     }
