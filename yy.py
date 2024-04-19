@@ -87,7 +87,7 @@ st.markdown(
     .st-emotion-cache-vj1c9o{
             background-color: transparent;
     }
-    .styles_terminalButto{
+    .styles_terminalButton__JBj5T{
         visibility: hidden;
     }
 </style>
