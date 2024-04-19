@@ -169,7 +169,7 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.markdown('<div class="message-box">{}</div>'.format(message["role"]), unsafe_allow_html=True):
         if message["role"]=="user":
-            st.markdown('<div class="cus"><img src="./static/user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
+            st.markdown('<div class="cus"><img src="https://github.com/elsoncruz/luna_ai/blob/main/static/luffy.jpg?raw=true" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
             pass
         else:
             st.markdown('<img src="https://github.com/elsoncruz/luna_ai/blob/main/static/chatbot.png?raw=true" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
@@ -177,7 +177,7 @@ for message in st.session_state.messages:
 
 
 if prompt := st.chat_input("say"):
-    st.chat_message("user").markdown('<div class="cus"><img src="./static/user.png" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
+    st.chat_message("user").markdown('<div class="cus"><img src="https://github.com/elsoncruz/luna_ai/blob/main/static/luffy.jpg?raw=true" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"user","content": prompt})
 
