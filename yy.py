@@ -80,7 +80,7 @@ st.markdown(
         background-color: transparent;
     }
     [data-testid="stAppViewContainer"]{
-        background-image:url("luna_ai/static/09.jpg");
+        background-image:url("09.jpg");
         background-size:cover;
     }
 </style>
@@ -165,22 +165,22 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.markdown('<div class="message-box">{}</div>'.format(message["role"]), unsafe_allow_html=True):
         if message["role"]=="user":
-            st.markdown('<div class="cus"><img src="luna_ai/static/user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
+            st.markdown('<div class="cus"><img src="user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
             pass
         else:
-            st.markdown('<img src="luna_ai/static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
+            st.markdown('<img src="chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
             pass
 
 
 if prompt := st.chat_input("say"):
-    st.chat_message("user").markdown('<div class="cus"><img src="luna_ai/static/user.png" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
+    st.chat_message("user").markdown('<div class="cus"><img src="user.png" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"user","content": prompt})
 
     response = ask_own_question(prompt)
 
     with st.chat_message("🤖"):
-        st.markdown('<img src="luna_ai/static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
+        st.markdown('<img src="chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"🤖","content":response})
 
