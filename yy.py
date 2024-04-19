@@ -76,7 +76,7 @@ st.markdown("""
 st.markdown(
     """
 <style>
-    .st-emotion-cache-usj992{
+    .st-emotion-cache-13k62yr{
         background-color: transparent;
     }
     [data-testid="stApp"]{
