@@ -165,10 +165,10 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.markdown('<div class="message-box">{}</div>'.format(message["role"]), unsafe_allow_html=True):
         if message["role"]=="user":
-            st.markdown('<div class="cus"><img src="user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
+            st.markdown('<div class="cus"><img src="./static/user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
             pass
         else:
-            st.markdown('<img src="chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
+            st.markdown('<img src="./static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
             pass
 
 
