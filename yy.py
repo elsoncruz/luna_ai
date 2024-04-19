@@ -90,6 +90,10 @@ st.markdown(
     .styles_terminalButton__JBj5T{
         visibility: hidden;
     }
+    st-emotion-cache-139wi93 ea3mdgi2{
+        display:none;
+        visibility:hidden;
+    }
 </style>
 """,
     unsafe_allow_html=True,
