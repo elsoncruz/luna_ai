@@ -80,7 +80,7 @@ st.markdown(
         background-color: transparent;
     }
     [data-testid="stAppViewContainer"]{
-        background-image:url("../static/09.jpg");
+        background-image:url("./static/09.JPG");
         background-size:cover;
     }
 </style>
