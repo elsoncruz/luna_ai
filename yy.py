@@ -79,7 +79,7 @@ st.markdown(
     .st-emotion-cache-usj992{
         background-color: transparent;
     }
-    [data-testid="stApp stAppEmbeddingId-sc6yfrzwihse st-emotion-cache-13k62yr erw9t6i1"]{
+    [data-testid="stApp stAppEmbeddingId-sc6yfrzwihse"]{
         background-image:url("static/09.jpg");
         background-size:cover;
     }
