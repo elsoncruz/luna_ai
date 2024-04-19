@@ -73,6 +73,21 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+st.markdown(
+    """
+<style>
+    .st-emotion-cache-usj992{
+        background-color: transparent;
+    }
+    [data-testid="stAppViewContainer"]{
+        background-image:url("./static/09.jpg");
+        background-size:cover;
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 
 st.markdown("""
             <style>
@@ -153,19 +168,19 @@ for message in st.session_state.messages:
             st.markdown('<div class="cus"><img src="./static/user.png" class="img2"></div>''<div class="user-box" style="margin-right: auto;">{}</div>'.format(message["content"]), unsafe_allow_html=True)
             pass
         else:
-            st.markdown('<img src="./static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
+            st.markdown('<img src="app/static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(message["content"]), unsafe_allow_html=True)   
             pass
 
 
 if prompt := st.chat_input("say"):
-    st.chat_message("user").markdown('<div class="cus"><img src="user.png" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
+    st.chat_message("user").markdown('<div class="cus"><img src="./static/user.png" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"user","content": prompt})
 
     response = ask_own_question(prompt)
 
     with st.chat_message("🤖"):
-        st.markdown('<img src="chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
+        st.markdown('<img src="./static/chatbot.png" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"🤖","content":response})
 
