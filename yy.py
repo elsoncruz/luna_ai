@@ -109,6 +109,9 @@ stChatFloatingInputContainer st-emotion-cache-usj992 e1d2x3se2{
 st-emotion-cache-4zpzjl eeusbqq1{
     background: transparent;
 }
+st-emotion-cache-18qnold eeusbqq2{
+    display:none;
+}
 </style>
 """,
     unsafe_allow_html=True,
