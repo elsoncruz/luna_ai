@@ -208,7 +208,7 @@ if prompt := st.chat_input("say"):
 
     response = ask_own_question(prompt)
 
-    with st.chat_message("ㅤ"):
+    with st.markdown("ㅤ"):
         st.markdown('<img src="https://github.com/elsoncruz/luna_ai/blob/main/static/chatbot.png?raw=true" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"🤖","content":response})
