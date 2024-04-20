@@ -87,7 +87,7 @@ st.markdown(
     }
     [data-testid="stBottomBlockContainer"]{
             text-align: left;
-            float: left;
+            float: top;
             background-color: rgba(240, 242, 246,50);
             padding: 10px;
             border-radius: 15px;
