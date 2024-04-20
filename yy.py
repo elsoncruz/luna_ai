@@ -72,7 +72,19 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
+st.markdown("""
+    <style>
+        .chat-input-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            z-index: 9999;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 st.markdown(
     """
@@ -207,7 +219,14 @@ for message in st.session_state.messages:
             pass
 
 
-if prompt := st.chat_input("say"):
+if prompt := st.chat_input("say", key="user_input", class_="chat-input-container"):
+    st.markdown("""
+    <script>
+        document.getElementById("user_input").addEventListener("focus", function() {
+            this.scrollIntoView();
+        });
+    </script>
+""", unsafe_allow_html=True)
     st.markdown('<div class="cus"><img src="https://github.com/elsoncruz/luna_ai/blob/main/static/luffy.jpg?raw=true" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"user","content": prompt})
