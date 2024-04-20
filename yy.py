@@ -95,6 +95,14 @@ st.markdown(
         display:none;
         visibility:hidden;
     }
+    .st-emotion-cache-4oy321 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 0px 1rem 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
 </style>
 """,
     unsafe_allow_html=True,
