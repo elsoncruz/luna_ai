@@ -85,6 +85,9 @@ st.markdown(
         background-size:cover;
         
     }
+    stVerticalBlockBorderWrapper{
+        float: inline-start;
+    }
     [data-testid="stBottomBlockContainer"]{
             
     }
