@@ -86,15 +86,7 @@ st.markdown(
         
     }
     [data-testid="stBottomBlockContainer"]{
-            text-align: left;
-            float: top;
-            background-color: rgba(240, 242, 246,50);
-            padding: 10px;
-            border-radius: 15px;
-            clear: both;
-            border:1px;
-            color:black;  
-            margin-bottom: 6px;
+            visibility:hidden;
     }
     .st-emotion-cache-vj1c9o{
             background-color: transparent;
