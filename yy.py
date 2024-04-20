@@ -100,9 +100,6 @@ st.markdown(
     stVerticalBlockBorderWrapper{
         float: inline-start;
     }
-    [data-testid="stBottomBlockContainer"]{
-                overflow: hidden;
-    }
     .st-emotion-cache-vj1c9o{
             background-color: transparent;
     }
