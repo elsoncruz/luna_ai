@@ -86,7 +86,7 @@ st.markdown(
         
     }
     [data-testid="stBottomBlockContainer"]{
-            visibility:hidden;
+            
     }
     .st-emotion-cache-vj1c9o{
             background-color: transparent;
