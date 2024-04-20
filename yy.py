@@ -103,6 +103,9 @@ st.markdown(
     border-radius: 0.5rem;
     overflow: hidden;
 }
+.stChatFloatingInputContainer st-emotion-cache-usj992 e1d2x3se2{
+   background: transparent;
+}
 </style>
 """,
     unsafe_allow_html=True,
