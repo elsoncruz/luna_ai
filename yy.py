@@ -85,6 +85,9 @@ st.markdown(
         background-size:cover;
         
     }
+    [data-testid="stBottomBlockContainer"]{
+        background: transparent;
+    }
     .st-emotion-cache-vj1c9o{
             background-color: transparent;
     }
