@@ -219,7 +219,7 @@ for message in st.session_state.messages:
             pass
 
 
-if prompt := st.chat_input("say", key="user_input", class_="chat-input-container"):
+if prompt := st.chat_input("say"):
     st.markdown("""
     <script>
         document.getElementById("user_input").addEventListener("focus", function() {
