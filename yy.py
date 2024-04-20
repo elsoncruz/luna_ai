@@ -202,13 +202,13 @@ for message in st.session_state.messages:
 
 
 if prompt := st.chat_input("say"):
-    st.chat_message("ㅤ").markdown('<div class="cus"><img src="https://github.com/elsoncruz/luna_ai/blob/main/static/luffy.jpg?raw=true" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
+    st.markdown('<div class="cus"><img src="https://github.com/elsoncruz/luna_ai/blob/main/static/luffy.jpg?raw=true" class="img2"></div>''<div class="user-box">{}</div>'.format(prompt), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"user","content": prompt})
 
     response = ask_own_question(prompt)
 
-    with st.chat_message("ㅤ", container=None):
+    with st.chat_message("ㅤ"):
         st.markdown('<img src="https://github.com/elsoncruz/luna_ai/blob/main/static/chatbot.png?raw=true" width=32 height=32>''<div class="message-box">{}</div>'.format(response), unsafe_allow_html=True)
 
     st.session_state.messages.append({"role":"🤖","content":response})
